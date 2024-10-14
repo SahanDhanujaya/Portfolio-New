@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color:  #262B2F;
+    align-items: center;
+}
+
+header>section>img{
+    width: 3rem;
+    border-radius: 100%;
+    padding: 10px;
+    
+}
+header>nav{
+    place-self: center end;
+}
+header>nav>ul{
+    display: flex;
+}
+header>nav>ul>li{
+    padding: 10px;
+    list-style: none;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+}
