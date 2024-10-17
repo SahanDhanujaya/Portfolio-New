@@ -243,6 +243,8 @@ hero>section:first-child .content>div>div>a>img {
 #aboutMe>section>div:nth-child(2)>div>div>label{
     width: 25%;
 }
+
+//
 /* 1024 size */
 @media all and (max-width:1024px) {
     html{
