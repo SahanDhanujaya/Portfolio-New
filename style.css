@@ -298,8 +298,8 @@ hero>section:first-child .content>div>div>a>img {
     font-weight: 500;
     font-optical-sizing: auto;
     font-size: 3rem;
+    color: black;
     font-weight: 900;
-    color: #99AEF5;
     margin: 8%;
 }
 #assignment>section{
@@ -321,7 +321,7 @@ hero>section:first-child .content>div>div>a>img {
 }
 #assignment>section>div>img{
     width: 100%;
-    height: 60%;
+    height: 10em;
     border-radius: 15px;
 }
 
@@ -349,6 +349,71 @@ hero>section:first-child .content>div>div>a>img {
     /* text-align: center; */
     
 }
+/* project section  */
+#project>h1{
+    text-align: center;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    color: black;
+    font-weight: 900;
+    margin: 8%;
+}
+#project>section{
+    color: white;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center center;
+    z-index: 2;
+}
+
+#project>section>div{
+    width: 80%;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background: #262B2F;
+    border-radius: 10px;
+    
+}
+#project>section>div>h4{
+    text-align: center;
+}
+#project>section>div>div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#project>section>div>div>button{
+    background-color: #262B2F;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+#project>section>div>img{
+    width: 100%;
+    height: 50%;
+}
+#project #wall{
+    border: 1px solid;
+    height: 300px;
+    background: linear-gradient(#262B2F,white);
+    margin-top: -100px;
+    z-index: 1;
+    padding-left: 4em;
+    border-radius: 10%;
+}
+#project>#wall>button{
+    padding: 4%;
+    border: 2px solid white;
+    background-color: #262B2F;
+    color: white;
+    border-radius: 10px;
+    place-self: center start;
+   
+}
+
 /* 1024 size */
 @media all and (max-width:1024px) {
     html{
@@ -409,6 +474,14 @@ hero>section:first-child .content>div>div>a>img {
     #assignment>section>div>div>button{
         font-size: 0.8rem;
         
+    }
+    #project>section>div>div>button{
+        font-size: 0.8rem;
+        padding:5px;
+    }
+    #project>#wall>button{
+        font-size: 0.8rem;
+       
     }
 
 
@@ -526,6 +599,23 @@ hero>section:first-child .content>div>div>a>img {
     #assignment>section{
         grid-template-columns: repeat(2,1fr);
     }
+    #project>section{
+        
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2em 0em;
+        margin: 0;
+        
+    }
+    #project #wall{
+        margin-top: -300px;
+    }
+    #project>#wall>button{
+        margin-top: 300px;
+        background-color: #ffffff;
+        border: 1px solid #262B2F;
+        color: #262B2F;
+       
+    }
 }
 /* phone medium size */
 @media all and (max-width:377px) {
@@ -608,6 +698,11 @@ hero>section:first-child .content>div>div>a>img {
     }
     #assignment>section>div{
         width: 60%;
+    }
+    #project>#wall>button{
+        margin-top: 280px;
+        
+       
     }
 
 
