@@ -244,7 +244,51 @@ hero>section:first-child .content>div>div>a>img {
     width: 25%;
 }
 
-//
+/* skill section  */
+#skill{
+    background-color: #282828e5;
+    margin-top: 10%;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+}
+#skill>section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em 2em;
+    padding: 10%;
+    padding-top: 5%;
+}
+#skill>h1{
+    text-align: center;
+    padding: 3%;
+    
+}
+#skill>section>div{
+    width: 100%;
+    height: 200px;
+    background-color: #262B2F;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+#skill>section>div>div{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+#skill>section>div>div button{
+    width: 50%;
+    height: 30px;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    background-color: #262B2F;
+    color: #ffffff;
+}
 /* 1024 size */
 @media all and (max-width:1024px) {
     html{
@@ -404,6 +448,12 @@ hero>section:first-child .content>div>div>a>img {
     #aboutMe>section:nth-child(2)>p{
         width: 100%;
     }
+    #skill>section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill>section>div{
+       font-size: 0.8rem;
+    }
 }
 /* phone medium size */
 @media all and (max-width:377px) {
@@ -443,6 +493,9 @@ hero>section:first-child .content>div>div>a>img {
     #aboutMe>section>div:nth-child(1)>img{
         width: 90%;
     }
+    #skill>section{
+        grid-template-columns: repeat(1,1fr);
+    }
 
 }
 /* phone small size */
@@ -464,6 +517,9 @@ hero>section:first-child .content>div>div>a>img {
 
     hero>div>ul>li>a>img {
         width: 2em;
+    }
+    #skill>section{
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
