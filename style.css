@@ -292,6 +292,7 @@ hero>section:first-child .content>div>div>a>img {
 /* assignment section  */
 #assignment{
     color: #ffffff;
+    position: relative;
 }
 #assignment>h1{
     text-align: center;
@@ -329,7 +330,7 @@ hero>section:first-child .content>div>div>a>img {
     display: flex;
     justify-content: center;
 }
-#assignment>section>div>div>button{
+#assignment>section>div>div>a>button{
     background: #262B2F;
     color: #ffffff;
     border-radius: 10px;
@@ -349,6 +350,50 @@ hero>section:first-child .content>div>div>a>img {
     /* text-align: center; */
     
 }
+/* cases1  */
+#assignment #cases1>header{
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+}
+#assignment #cases1>header>button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+#assignment #cases1>header>button>img{
+    width: 2rem;
+}
+#assignment #cases1{
+    width: 60%;
+    height: fit-content;
+    border: 2px solid black;
+    background-color: #111416;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#assignment .cases>div{
+    margin-top:10% ;
+}
+#assignment .cases>div>a{
+    text-decoration: none;
+    color: white;
+}
+#assignment .cases>div>a>h1{
+    margin: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
+    background-color: #454545;
+    box-shadow: rgba(229, 229, 229, 0.12) 0px 2px 4px 0px, rgba(81, 80, 80, 0.32) 0px 2px 16px 0px;
+    
+}
+
 /* project section  */
 #project>h1{
     text-align: center;
@@ -413,6 +458,118 @@ hero>section:first-child .content>div>div>a>img {
     place-self: center start;
    
 }
+.hireMe{
+    margin-top: 10%;
+    background-color: #1b1e20;
+    color: white;
+}
+.hireMe>h1 {
+    text-align: center;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hireMe>section {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hireMe>section>div:nth-child(1) {
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: fit-content;
+    background-color: #262B2F;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.hireMe>section>div:nth-child(1)>form {
+    height: fit-content;
+    padding: 15px;
+    width: 100%;
+}
+
+.hireMe>section>div:nth-child(1)>form input {
+    width: 100%;
+    height: 30px;
+    background-color: #454545;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+}
+
+.hireMe>section>div:nth-child(1)>form textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #454545;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+}
+
+.hireMe>section>div:nth-child(1)>form button {
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: #454545;
+    color: white;
+    border: none;
+}
+
+.hireMe>section>div:nth-child(2){
+    width: 100%;
+}
+.hireMe>section>div:nth-child(2)>section>img {
+    width: 70%;
+}
+
+.hireMe>section {
+    display: flex;
+    justify-content: center;
+}
+
+.hireMe>section>div {
+    margin: 10px;
+}
+
+.hireMe>section>div:nth-child(2)>section>div>div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    background-color: #262B2F;
+}
+
+.hireMe>section>div:nth-child(2)>section>div>div>#whatsapp {
+    color: green;
+
+}
+
+.hireMe>section>div:nth-child(2)>section>div>div>#email {
+    color: rgb(181, 57, 57);
+
+}
+
+.hireMe>section>div:nth-child(2)>section>div>div>#location {
+    color: red;
+
+}
+
+.hireMe>section>div:nth-child(2)>section>div {
+    display: flex;
+}
+
+
 
 /* 1024 size */
 @media all and (max-width:1024px) {
@@ -471,7 +628,7 @@ hero>section:first-child .content>div>div>a>img {
         width: 100%;
       
     }
-    #assignment>section>div>div>button{
+    #assignment>section>div>div>a>button{
         font-size: 0.8rem;
         
     }
@@ -616,6 +773,10 @@ hero>section:first-child .content>div>div>a>img {
         color: #262B2F;
        
     }
+    #hireMe>section{
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* phone medium size */
 @media all and (max-width:377px) {
@@ -703,6 +864,23 @@ hero>section:first-child .content>div>div>a>img {
         margin-top: 280px;
         
        
+    }
+    .hireMe>section>div:nth-child(1)>form input {
+        width: 100%;
+        height: 20px;
+        
+    }
+    
+    .hireMe>section>div:nth-child(1)>form textarea {
+        width: 100%;
+        height: 200px;
+        background-color: #454545;
+        border-radius: 10px;
+        border-style: none;
+        padding: 5px;
+    }
+    .hireMe>section>div:nth-child(1)>form button{
+        margin: 5px;
     }
 
 
