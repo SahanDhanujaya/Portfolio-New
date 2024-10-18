@@ -632,8 +632,59 @@ hero>section:first-child .content>div>div>a>img {
     width: 70%;
     font-size: 1em;
 }
+#education>#topic {
 
+}
 
+#education>#topic>h1 {
+    text-align: center;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#education>#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#education>#main>#eduDetails {
+    padding: 5px;
+    width: 300px;
+    height: fit-content;
+    margin: 5px;
+    color: white;
+    background-color: #262B2F;
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px rgb(98, 98, 98);
+
+}
+
+#education>#main>#eduDetails>div>h3 {
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-top: 2%;
+    color: rgb(197, 197, 197);
+}
+
+#education>#main>#eduDetails>div>p {
+    font-size: 1rem;
+    width: 270px;
+    align-content: center;
+}
+
+#education>#main>img {
+    width: 20%;
+    height: 550px;
+    margin: 5px;
+
+}
 /* 1024 size */
 @media all and (max-width:1024px) {
     html{
@@ -704,12 +755,18 @@ hero>section:first-child .content>div>div>a>img {
        
     }
     #gallery>section>div{
-        width: 30%;
+        width: 100%;
         height: 200px;
         border: 2px solid ;
         margin: 20px;
     
     }
+    #education>#main>img {
+        height: 250px;
+        width: 30%;
+    
+    }
+
 
 
 }
@@ -759,9 +816,10 @@ hero>section:first-child .content>div>div>a>img {
     #gallery>div{
         top: 50px;
         
-   
+    }
 
-}/* phone large size */
+}
+/* phone large size */
 @media all and (max-width:426px) {
     html{
         font-size: 55%;
@@ -868,6 +926,22 @@ hero>section:first-child .content>div>div>a>img {
     }
     #gallery>section>div{
         margin: 5px ;
+    }
+    #education>#main{
+        display: flex;
+        flex-direction: column;
+    }
+    #education>#main>#eduDetails{
+        width: 70%;
+       
+    }
+    #education>#main>#eduDetails>div>p{
+        width: 200px;
+        text-align: center;
+       
+    }
+    #education>#main>img {
+        width: 70%;
     }
 }
 /* phone medium size */
