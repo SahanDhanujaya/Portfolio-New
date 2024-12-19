@@ -3,34 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sahan Dhanujaya">
-    <meta name="description" content="I'm working as a Software engineer.I introduce me from this portfolio">
-    <meta name="keyword" content="software,engineer,java,html,css,angular,react">
-    <link rel="icon" href="assets/icon/Untitled%20design.png">
-    <title>My Portfolio</title>
+    <meta name="description" content="I indroduce about me as a proficional software engineer">
+    <meta name="keyword" content="html,css,js,portfolio,java,python,c++,c#,go">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
 </head>
 
 <body>
-    <!-- header section -->
-    <header>
-        <!-- my logo  -->
+    <!-- welcome section -->
+    <main id="welcome" class="animate__animated animate__bounce">
         <section>
-            <img src="assets/icons/Untitled design.png" alt="myLogo">
+            <h1>Hello,</h1>
+            <h1>Welcome To The My World</h1>
+            <p>I am Sahan Dhanujaya now you can contact me.</p>
+            <h3>Scroll Now</h3>
+            <div id="scrollbutton">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </section>
+    </main>
+    <!-- header  -->
+    <header>
         <!-- nav bar -->
-        <nav>
+        <nav class="animate__animated animate__backInUp">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#skill">Skills</a></li>
@@ -38,88 +44,104 @@
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#aboutMe">About</a></li>
                 <li><a href="#hireMe">Contact</a></li>
-                <li><button type="button"><i></i>Download My CV</button></li>
             </ul>
         </nav>
     </header>
-    <!-- hero section  -->
     <hero>
-        <section>
-            <div class="content">
-                <h1>Hello....</h1>
-                <h3>I'm Sahan Dhanujaya,</h3>
-                <h4>A Professional Software Engineer.</h4>
+        <main class="animate__animated animate__backInUp">
+            <section>
+                <h1>Hello</h1>
+                <h2>I'm Sahan Dhanujaya</h2>
+                <h3>A Professional Software Engineer.</h3>
                 <p>I'm Sahan Dhanujaya.I specialize in creating impactful digital solutions.</p>
-                <p>I specialize in creating impactful digital solutions.<br>
-                    <!--mail me-->
-                    <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
-                </p>
-
-                <!--contact information-->
-                <div>
-                    <button type="button">Hire Me</button><button type="button">Contact Me</button><br>
-                </div>
-            </div>
+                <button>Contact Me</button><button>Resume</button>
+            </section>
+            <img src="assets/imgs/432277000_925106579085730_5372217276935642645_n.jpg" alt="myPicture">
+        </main>
+        <section class="animate__animated animate__backInUp">
+            <img src="assets/icons/icons8-whatsapp-50 (2).png" alt="whatsappIcon">
+            <img src="assets/icons/icons8-insta-50.png" alt="insta">
+            <img src="assets/icons/icons8-x-30.png" alt="twitter">
+            <img src="assets/icons/icons8-linkedin-50 (1).png" alt="linkedin">
         </section>
-        <section>
-            <img src="assets/img/freepik-export-202407250258128R4p.png" alt="My picture">
-        </section>
-        <div>
-            <ul id="contact">
-                <li><a href=""><img src="assets/icons/icons8-github-32.png" alt="githubLogo"></a></li>
-                <li><a href=""><img src="assets/icons/icons8-whatsapp-50.png" alt="githubLogo"></a></li>
-                <li><a href=""><img src="assets/icons/icons8-twitter-30.png" alt="githubLogo"></a></li>
-                <li><a href=""><img src="assets/icons/icons8-linkedin-50.png" alt="githubLogo"></a></li>
-            </ul>
-        </div>
     </hero>
 
     <!-- about me section -->
-    <main id="aboutMe">
-        <h1>About <span style="color: #99AEF5;">Me</span></h1>
+    <main class="animate__animated animate__backInUp" id="aboutMe">
         <section>
-            <!-- my image  -->
+            <img src="assets/imgs/401069105_860626685533720_1764739307085247302_n.jpg" alt="myPicture">
             <div>
-                <img src="assets/img/young-man-green-shirt-wearing-glasses-standing-sideways-with-smile-face-white-wall.png"
-                    alt="myPicture">
-            </div>
-            <!-- about me  -->
-            <div>
-                <h2>Professional</h2>
-                <h3>Software Engineer</h3>
+                <h1>About <span>Me</span></h1>
                 <p>I bring a wealth of experience as a full stack<br>
                     developer in the IT industry.My technical expertise<br>
                     spans a vqariety of programming languages. I am currently <br>
                     studying web developing, mobile developing and I am interested <br>
                     in cording, music,traveling fitness and photography.</p>
                 <div>
-                    <div>
-                        <label class="labelName" for="name">Name</label>
-                        <p class="content" id="name">Sahan Dhanujaya</p><br>
-                    </div>
-                    <div>
-                        <label class="labelName" for="age">Age</label>
-                        <p class="content" id="age">21yrs</p><br>
-                    </div>
-                    <div>
-                        <label class="labelName" for="address">Address</label>
-                        <p class="content" id="address">Morahenagama,Hatton</p><br>
-                    </div>
+                    <h1>Name</h1>
+                    <span>Sahan Dhanujaya</span>
+                </div>
+                <div>
+                    <h1>Date Of Birth</h1>
+                    <span>05/10/2003</span>
+                </div>
+                <div>
+                    <h1>Address</h1>
+                    <span>No.116/1,Morahenagama,Hatton</span>
                 </div>
             </div>
         </section>
     </main>
-    <!--Education-->
-    <section id="education">
-        <section id="topic">
-            <h1>Educa<span style="color: #99AEF5;">tion</span></h1>
+    <main id="skill">
+        <h1>Ski<span>lls</span></h1>
+        <section>
+            <div class="skillBox">
+                <div class="technologies" style="display: flex;">
+                    <div><img src="assets/technologies/icons8-html-48 (1).png" alt=""><p>HTML</p></div>
+                    <div><img src="assets/technologies/icons8-css-48.png" alt=""><p>CSS</p></div>
+                    <div><img src="assets/technologies/icons8-angular-48.png" alt=""><p>Angular</p></div>
+                    <div><img src="assets/technologies/icons8-react-native-48.png" alt=""><p>React</p></div>
+                </div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>HTML,CSS,JavaScript,Angular,<br>java,Python,PHP</p>
+                
+            </div>
+            <div class="skillBox">
+                <i class="fa-solid fa-pencil-mechanical"></i>
+                <h3>Graphic Designer</h3>
+                <p>PhotoShop,Figma,PremiumPro,<br>Canva,InkSpace</p>
+                <div><button>See More</button></div>
+            </div>
+            <div class="skillBox">
+                <h3>Back-end Developer</h3>
+                <p>Java,Python,C++,C#,SQL,Kotlin,<br>Golang</p>
+                <div><button>See More</button></div>
+            </div>
+            <div class="skillBox">
+                <h3>Game Developer</h3>
+                <p>C#,C++,GDScript,VisualScript</p>
+                <div><button>See More</button></div>
+            </div>
+            <div class="skillBox">
+                <h3>Content Writer</h3>
+                <p>Grammarly,GoogleDocs,MSWords,<br>AnyWord</p>
+                <div><button>See More</button></div>
+            </div>
+            <div class="skillBox">
+                <h3>Online Streamer</h3>
+                <p>OBS Studio,StreamLabs,WireCast,<br>LightStream</p>
+                <div><button>See More</button></div>
+            </div>
         </section>
-        <section id="main">
-            <!--education details-->
-            <section id="eduDetails">
-                <!--education details in 2009-2013-->
+    </main>
+    <main id="education">
+        <h1>Educa<span>tion</span></h1>
+        <section>
+            <div>
+                <h3>2008-2013</h3>
                 <div>
-                    <h3>2009-2013</h3>
+                    <h3>Primary Education</h3>
                     <p>I began my educational journey in 2009,
                         embarking on a path that would shape my
                         future. In 2013, I reached a significant
@@ -127,9 +149,11 @@
                         exam, marking the completion of my
                         primary education.</p>
                 </div>
-                <!--education details in 2013-2019-->
+            </div>
+            <div>
+                <h3>2013-2019</h3>
                 <div>
-                    <h3>2013-2019</h3>
+                    <h3>Secondary Education</h3>
                     <p>I embarked on my secondary education
                         journey, a period filled with invaluable
                         experiences and personal growth. These
@@ -139,9 +163,11 @@
                         2019, I successfully completed my Ordinary
                         Level exams with excellent results.</p>
                 </div>
-                <!--education details in 2019-2022-->
+            </div>
+            <div>
+                <h3>2019-2022</h3>
                 <div>
-                    <h3>2019-2022</h3>
+                    <h3>Advance Education</h3>
                     <p>In 2019, I transitioned into my Advanced
                         Level education, choosing the Combined
                         Mathematics stream.Successfully
@@ -150,208 +176,225 @@
                         for my future pursuit of software
                         engineering.</p>
                 </div>
-                <button type="button">Learn More <i class="fa-solid fa-arrow-right"></i></button>
-            </section>
-            <img src="assets/img/img_6.png" alt="Education image">
+            </div>
         </section>
-    </section>
-    <main id="skill">
-        <h1>Skills</h1>
-        <section>
+    </main>
+    <main id="project">
+        <section id="desc">
+            <h1>Pro<span>ject</span></h1>
+            <p>I’m a passionate full stack developer with a strong foundation in <span>Java, Python, HTML, CSS, React
+                    and Angular</span>. With experience in both front-end and back-end development, I create dynamic,
+                user-friendly web applications. Alongside my technical skills, I have a knack for content writing,
+                enabling me to communicate ideas clearly and effectively.</p>
+            <button>See my git hub</button>
+        </section>
+        <section id="wrapper">
             <div>
-                <h3>Web Developer</h3>
-                <p>HTML,CSS,JavaScript,Angular,<br>java,Python,PHP</p>
-                <div><button>See More</button></div>
+                <img src="assets/imgs/img_10.png" alt="">
+                <h5>US Cargo</h5>
+                <button>See in github</button>
             </div>
             <div>
-                <h3>Graphic Designer</h3>
-                <p>PhotoShop,Figma,PremiumPro,<br>Canva,InkSpace</p>
-                <div><button>See More</button></div>
+                <img src="assets/imgs/img_11.png" alt="">
+                <h5>Juice World POS</h5>
+                <button>See in github</button>
             </div>
             <div>
-                <h3>Back-end Developer</h3>
-                <p>Java,Python,C++,C#,SQL,Kotlin,<br>Golang</p>
-                <div><button>See More</button></div>
+                <img src="assets/imgs/img_12.png" alt="">
+                <h5>Banking System</h5>
+                <button>See in github</button>
             </div>
             <div>
-                <h3>Game Developer</h3>
-                <p>C#,C++,GDScript,VisualScript</p>
-                <div><button>See More</button></div>
+                <h5>Project 04</h5>
             </div>
             <div>
-                <h3>Content Writer</h3>
-                <p>Grammarly,GoogleDocs,MSWords,<br>AnyWord</p>
-                <div><button>See More</button></div>
+                <h5>Project 05</h5>
             </div>
             <div>
-                <h3>Online Streamer</h3>
-                <p>OBS Studio,StreamLabs,WireCast,<br>LightStream</p>
-                <div><button>See More</button></div>
+                <h5>Project 06</h5>
+            </div>
+            <div>
+                <h5>Project 07</h5>
+            </div>
+            <div>
+                <h5>Project 08</h5>
+            </div>
+            <div>
+                <h5>Project 09</h5>
+            </div>
+            <div>
+                <h5>Project 10</h5>
             </div>
         </section>
     </main>
     <main id="assignment">
-        <h1>Assign<span style="color: #99AEF5;">ment</span></h1>
-        <section>
-            <div>
-                <img src="assets/img/img_1.png" alt="">
-                <h2>Assignment01</h2>
-                <p>In this project, I explored various CSS positioning techniques, including static, relative, absolute,
-                    and fixed positioning. By applying these properties, I controlled the layout and alignment of
-                    elements on the webpage. </p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn1">Cases</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/img/img_2.png" alt="">
-                <h2>Assignment02</h2>
-                <p>In this assignment, I focused on implementing CSS animations and transitions to enhance the
-                    interactivity and user experience of a webpage. </p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn1">Cases</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/img/img_3.png" alt="">
-                <h2>Assignment03</h2>
-                <p>In this assignment, I developed a personal portfolio website to showcase my skills and projects. The
-                    site features a clean, professional design with sections dedicated to my work experience, technical
-                    expertise, and completed projects.</p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn1">Cases</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/img/img_4.png" alt="">
-                <h2>Assignment04</h2>
-                <p>In this project, I built a POS interface using Bootstrap. The design is responsive and user-friendly,
-                    leveraging Bootstrap’s grid system and components to ensure a seamless experience across different
-                    devices.</p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn2">Cases</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/img/img_5.png" alt="">
-                <h2>Assignment05</h2>
-                <p>In this project, I created a fully functional calculator using JavaScript, HTML, and CSS. The
-                    calculator performs basic arithmetic operations like addition, subtraction, multiplication, and
-                    division.</p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn3">Cases</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/img/img_7.png" alt="">
-                <h2>Assignment06</h2>
-                <p>In this project, I developed an interactive game using JavaScript, HTML, and CSS. The game
-                    incorporates real-time user input, logic handling, and dynamic updates to the UI.</p>
-                <div>
-                    <a href="#cases1"><button>See in github</button><button id="caseBtn4">Cases</button></a>
-                </div>
-            </div>
-            <!-- cases1  -->
-            <section class="cases" id="cases1" style="display: none;">
-                <header>
-                    <button id="closeBtn"><img src="assets/icons/icons8-close-48.png" alt="close"></button>
-                </header>
-                <div>
-                    <a href=""><h1>case01</h1><a href="../../Assignments/Assignment3/case3/index.html"><button>view</button></a></a>
-                    <a href=""><h1>case02</h1></a>
-                    <a href=""><h1>case03</h1></a>
-                    <a href=""><h1>case04</h1></a>
-                </div>
-            </section>
-            <section class="cases" id="cases2" style="display: none;">
-                <header>
-                    <button class="cases" id="closeBtn"><img src="assets/icons/icons8-close-48.png" alt="close"></button>
-                </header>
-                <div>
-                    <a href=""><h1>case01</h1></a>
-                    <a href=""><h1>case02</h1></a>
-                    <a href=""><h1>case03</h1></a>
-                    <a href=""><h1>case04</h1></a>
-                </div>
-            </section>
-            <section class="cases" id="cases3" style="display: none;">
-                <header>
-                    <button id="closeBtn"><img src="assets/icons/icons8-close-48.png" alt="close"></button>
-                </header>
-                <div>
-                    <a href=""><h1>case01</h1></a>
-                    <a href=""><h1>case02</h1></a>
-                    <a href=""><h1>case03</h1></a>
-                    <a href=""><h1>case04</h1></a>
-                </div>
-            </section>
-            <section class="cases" id="cases4" style="display: none;">
-                <header>
-                    <button id="closeBtn"><img src="assets/icons/icons8-close-48.png" alt="close"></button>
-                </header>
-                <div>
-                    <a href=""><h1>case01</h1></a>
-                    <a href=""><h1>case02</h1></a>
-                    <a href=""><h1>case03</h1></a>
-                    <a href=""><h1>case04</h1></a>
-                </div>
-            </section>
-        </section>
-    </main>
+        <h1>Assign<span>ment</span></h1>
+        <section id="wrapper">
+            <button id="prevSlide" class="btn"><img src="assets/icons/icons8-arrow-30.png" alt="previous"></button>
+            <section class="list">
+                <div class="box">
+                    <div>
+                        <div id="img1"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                        <p>This section features my CSS assignments focused on positioning techniques.</p>
+                    </div>
 
-    <main id="project">
-        <h1>Pro<span style="color: #99AEF5;">jects</span></h1>
-        <section>
-            <div>
-                <img src="assets/img/img_10.png" alt="us project">
-                <h4>US Cargo Freight Service</h4>
-                <div>
-                    <button type="button"><i class="fa-brands fa-github"></i> Open In Github</button>
                 </div>
-            </div>
-            <div>
-                <img src="assets/img/img_12.png" alt="us project">
-                <h4>US Cargo Freight Service</h4>
-                <div>
-                    <button type="button"><i class="fa-brands fa-github"></i> Open In Github</button>
+                <div class="box" id="box1">
+                    <div>
+                        <div id="img2"></div>
+                        <div>
+                            <h3>Assignment 02</h3>
+                            <p>This section highlights my assignments on CSS animations and transitions.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                        <p>This section highlights my assignments on CSS animations and transitions.</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="assets/img/img_11.png" alt="us project">
-                <h4>US Cargo Freight Service</h4>
-                <div>
-                    <button type="button"><i class="fa-brands fa-github"></i> Open In Github</button>
+                <div class="box">
+                    <div>
+                        <div id="img3"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="assets/img/img_12.png" alt="us project">
-                <h4>US Cargo Freight Service</h4>
-                <div>
-                    <button type="button"><i class="fa-brands fa-github"></i> Open In Github</button>
+                <div class="box">
+                    <div>
+                        <div id="img4"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="wall">
-            <button>See all in github</button>
-        </section>
-    </main>
-    <main id="gallery">
-        <h1>Gall<span style="color: #99AEF5;">ery</span></h1>
-        <div>
-            <p>"Welcome to my gallery, where I capture the beauty of the world through my travels and experiences. From breathtaking landscapes to unique cultural moments, these snapshots tell the story of my journey as a traveler and professional explorer of life."</p>
-        </div>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+                <div class="box">
+                    <div>
+                        <div id="img5"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div id="img6"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div id="img7"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div id="img8"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div id="img9"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <div id="img10"></div>
+                        <div>
+                            <h3>Assignment 01</h3>
+                            <p>This section features my CSS assignments focused on positioning techniques.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><button class="animate__animated animate__flipInX">View Cases</button><button>View in github</button></div>
+                    </div>
+                </div>
+            </section>
+            <button id="nextSlide" class="btn"><img src="assets/icons/icons8-arrow-30.png" alt="next"></button>
         </section>
     </main>
     <main class="hireMe" id="hireMe">
-        <h1>Hire <span style="color: #99AEF5;">Me</span></h1>
+        <h1>GET IN TOUCH</h1>
+        <h1>CONTACT</h1>
         <section>
+            <div id="contact">
+                    <div>
+                        <div>
+                            <img src="assets/icons/icons8-whatsapp-48.png" alt="whatsappLogo">
+                        </div>
+                        <div>
+                            <p>(+94)756519837</p>
+                        </div>
+                    </div>
+
+                    <!--email-->
+                    <div>
+                        <div>
+                            <img src="assets/icons/icons8-email-48.png" alt="emailLogo">
+                        </div>
+                        <div>
+                            <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
+                        </div>
+                    </div>
+                    <!--location-->
+                    <div>
+                        <div>
+                            <img src="assets/icons/icons8-location-48.png" alt="locationLogo    ">
+                        </div>
+                        <div>
+                            <p>116/1,Morahenagama,Hatton</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- <div style="border: 1px solid;"></div> -->
             <!--email section-->
-            <div>
+            <div id="email">
                 <form method="post">
                     <div>
                         <input type="text" placeholder="Your name" name="name"><br><br>
@@ -363,70 +406,9 @@
                     </div>
                 </form>
             </div>
-            <!--contact information-->
-            <div id="contact">
-                <section>
-                    <img src="assets/img/img_16.png" alt="my picture" title="Sahan Dhanujaya">
-                </section>
-                <section>
-                    <div>
-
-                        <div>
-                            <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div>
-                            <h4>Whatsapp</h4>
-                            <p>(+94756519837)</p>
-                        </div>
-                    </div>
-
-                    <!--email-->
-                    <div>
-                        <div>
-                            <i id="email" class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a>
-                        </div>
-                    </div>
-                    <!--location-->
-                    <div>
-                        <div>
-                            <i id="location" class="fa-solid fa-map-location"></i>
-                        </div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>116/1,Morahenagama,Hatton</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </section>
     </main>
-    <script>
-        let cases1 = document.getElementById("cases1");
-        document.getElementById("caseBtn1").addEventListener("click", function () {
-            cases1.style.display = "block";
-            
-        })
-        document.getElementById("closeBtn").addEventListener("click",function(){
-            cases1.style.display = "none";
-        })
-
-        let cases2 = document.getElementById("cases2");
-        document.getElementById("caseBtn2").addEventListener("click", function () {
-            cases2.style.display = "block";
-            
-        })
-        document.getElementById("closeBtn").addEventListener("click",function(){
-            cases2.style.display = "none";
-        })
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/b23cccc487.js" crossorigin="anonymous"></script>
 </body>
 

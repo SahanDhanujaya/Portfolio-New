@@ -1,1064 +1,989 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
+    background-color: #15181a;
+    color: white;
+    overflow-x: hidden;
 }
-
-/* header section */
-header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #262B2F;
-    align-items: center;
+/* welcome section */
+#welcome{
+    background-color: black;
+    color: white;
 }
-
-header>section>img {
-    width: 3rem;
-    border-radius: 100%;
-    padding: 10px;
-
-}
-
-header>nav {
-    place-self: center end;
-}
-
-header>nav>ul {
+#welcome>section {
     display: flex;
-}
-
-header>nav>ul>li {
-    padding: 10px;
-    list-style: none;
-}
-
-header>nav>ul>li>a {
-    text-decoration: none;
-}
-
-header>nav>ul>li>a>button {
-    width: fit-content;
-}
-
-/* hero section */
-
-hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    place-items: center center;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: bold;
-}
-
-hero>div {
-    display: inline-block;
-    grid-column: 1/3;
-    margin-top: -60px;
-}
-
-hero>div>ul {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    height: 100vh;
 
 }
-
-hero>div>ul>li {
-    list-style: none;
+#welcome>section>h1{
+    font-size: 2rem;
 }
-
-hero>div>ul>li>a>img {
-    border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 3px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 3em;
+#welcome>section>p{
+    font-size: 2rem;
 }
-
-hero>section:first-child {
-    place-self: center end;
-    padding: 100px;
-
-}
-
-hero>section:first-child .content {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 20px;
-    width: 120%;
-    border-radius: 10px;
-}
-
-hero>section:first-child .content>h1 {
-    font-size: 5em;
-    color: rgb(180, 180, 180);
-    font-family: "Caveat Brush", cursive;
-    font-weight: 800;
-    font-style: normal;
-}
-
-hero>section:first-child .content>h3 {
-    font-size: 3em;
-}
-
-hero>section:first-child .content>h4 {
-    font-size: 2em;
-    color: #99AEF5;
-    text-shadow: 3px 3px 4px rgb(83, 83, 83);
-}
-
-hero>section:first-child .content>p:nth-child(1) {
-    display: none;
-}
-
-hero>section:first-child .content>p {
-    color: #262B2F;
+#welcome>section>h3{
     font-size: 1rem;
 }
-
-hero>section:first-child .content>div>button {
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    border: 2px solid #262B2F;
-
+#welcome>section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    animation: myAnimation 2s 1s infinite;
 }
-
-hero>section:first-child .content>div>button:nth-child(1) {
-    background-color: #262B2F;
-    color: white;
-    border: none;
-
+#welcome>section>div>div{
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    transform: rotate(135deg);
+    border-bottom: none;
+    border-left: none;
+    cursor: pointer;
+    
 }
-
-hero>section:first-child .content>div>button:nth-child(2) {
-    background-color: #ffffff;
-    color: #262B2F;
-
+#welcome>section>div>div:nth-child(1){
+    animation: scrollAnimation 1s linear infinite ;
 }
-
-hero>section:nth-child(2) {}
-
-hero>section:nth-child(2)>img {
-    width: 600px;
-    place-self: center center;
-    border-radius: 100%;
-    background-color: #262B2F;
+#welcome>section>div>div:nth-child(2){
+    animation: scrollAnimation 2s linear 2s infinite ;
 }
-
-hero>section:first-child .content>div>div {
+#welcome>section>div>div:nth-child(3){
+    animation: scrollAnimation 2s linear 3s infinite ;
+}
+/* animations of welcome section */
+@keyframes scrollAnimation {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        border-color: green;
+    }
+}
+@keyframes myAnimation {
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
+/* header */
+header{
+    
+}
+header>nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-hero>section:first-child .content>div>div>a>img {
-    margin: 3px;
-    border-radius: 100%;
-    padding: 3px;
-    width: 4%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-#aboutMe {
-    margin-top: 100px;
-}
-
-#aboutMe>h1 {
-    text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    font-weight: 900;
-    
-}
-
-#aboutMe>section {
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center center;
-    grid-gap: 10px;
-}
-#aboutMe>section>div:nth-child(1){
-    place-self: end end;
-}
-#aboutMe>section>div>img{
-    width: 40rem;
-    background-color: #262B2F;
-    border-radius: 100%;
-    
-}
-#aboutMe>section>div:nth-child(2){
-    place-self: start start;
-}
-#aboutMe>section>div:nth-child(2)>h2{
-    color: gray;
-    font-size: 4em;
-    padding: 0;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-#aboutMe>section>div:nth-child(2)>h3{
-    color: gray;
-    font-size: 3.5em;
-    padding: 0;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-#aboutMe>section>div:nth-child(2)>p{
-    width: 100%;
-    font-weight: 500;
-    font-size: 1.3rem;
-    font-style: normal;
-}
-#aboutMe>section>div:nth-child(2)>div>div{
+header>nav>ul{
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 10px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    padding-left: 10px;
 }
-#aboutMe>section>div:nth-child(2)>div>div:hover{
+header>nav>ul>li{
+    list-style: none;
+    margin: 15px;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    width: fit-content;
+}
+header>nav>ul>li>a:hover{
+    border-bottom: 3px solid rgb(191, 191, 115);
+}
+/* hero section */
+hero{
     
-    background-color: #99AEF5;
 }
-#aboutMe>section>div:nth-child(2)>div>div>label{
-    width: 25%;
+hero>main{
+     
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+hero>main>section:first-child>button{
+    background-color: #15181a;
+    border: 1px solid rgb(191, 191, 115);
+    color: rgb(191, 191, 115);
+    margin-right: 10px;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin-top: 10px;
+    width: 20%;
+}
+hero>main>section:first-child{
+    place-self: center end;
+}
+hero>main>section:first-child>p{
+    width: 80%;
+}
+hero>main>section:first-child>button:hover{
+    background-color:rgb(191, 191, 115) ;
+    color: #15181a;
+    border: #15181a;
 }
 
-/* skill section  */
-#skill{
-    background-color: #282828e5;
-    margin-top: 10%;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: white;
+hero>main>img{
+    width: 20%;
+    opacity: 0.8;
+    box-shadow: rgb(0, 0, 0) 0px 10px 20px, rgb(0, 0, 0) 0px 6px 6px;
+    
 }
+hero>section{
+    display: flex;
+    justify-content: center;
+}
+hero>section>img{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-top: -50px;
+    
+}
+#aboutMe{
+    margin-top: 50px;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+#aboutMe>section{
+    display: flex;
+    justify-content: center;
+}
+#aboutMe>section>img{
+    width: 25%;
+    height: fit-content;
+    place-self: center start;
+    margin-right: 5px;
+}
+#aboutMe>section>div{
+    place-self: start start;
+    margin-left: 5px;
+
+}
+#aboutMe>section>div>h1{
+    margin: 0;
+    padding: 0;
+}
+#aboutMe>section>div>h1>span{
+    color: rgb(191, 191, 115);
+}
+#aboutMe>section>div>p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#aboutMe>section>div>div{
+    width: 100%;
+    box-shadow: rgba(125, 125, 125, 1) 0px 50px 100px -20px, rgba(131, 131, 131, 1) 0px 30px 60px -30px, rgba(112, 112, 112, 1) 0px -2px 6px 0px inset;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    align-content: center;
+}
+#aboutMe>section>div>div>h1{
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+    padding: 5px;
+    width: 20%;
+    display: inline-block;
+    
+}
+
 #skill>section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2em 2em;
-    padding: 10%;
+    height: 500px;
+    padding: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 5%;
-}
-#skill>h1{
-    text-align: center;
-    padding: 3%;
-    
-}
-#skill>section>div{
-    width: 100%;
-    height: 200px;
-    background-color: #262B2F;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    font-size: 1rem;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-}
-#skill>section>div>div{
-    padding: 10%;
-    display: flex;
-    justify-content: center;
-}
-#skill>section>div>div button{
-    width: 50%;
-    height: 30px;
-    border: #ffffff solid 2px;
-    border-radius: 10px;
-    background-color: #262B2F;
-    color: #ffffff;
-}
-/* assignment section  */
-#assignment{
-    color: #ffffff;
+    grid-gap:30px ;
     position: relative;
 }
-#assignment>h1{
-    text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    color: black;
-    font-weight: 900;
-    margin: 8%;
-}
-#assignment>section{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1em 1em;
-    padding: 2em;
-    
-}
-#assignment>section>div{
-    place-self: center center;
+#skill>section>div{
+
     width: 90%;
-    height: fit-content;
-    border-radius: 12px;
-    padding: 5px;
-    background-color: #262B2F;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 90%;
+    background-color: rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
     
 }
-#assignment>section>div>img{
+.skillBox{
+    position: relative;
+}
+#skill>h1{
+    margin-top: 10%;
+    text-align: center;
+}
+#skill>h1>span{
+    color: rgb(191, 191, 115);
+}
+.skillBox:hover::before{
+    content: "";
+
     width: 100%;
-    height: 10em;
-    border-radius: 15px;
+    height: 100%;
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    /*translate: 0 100% 0;*/
+    opacity: 0.7;
+    animation: ani 0.6s;
+
+}
+@keyframes ani {
+    0%{
+        translate: 0 100% 0;
+        opacity: 0;
+    }
+    25%{
+        translate: 0 75% 0;
+        opacity: 0;
+    }
+    50%{
+        translate: 0 50% 0;
+        opacity: 0;
+    }
+    75%{
+        translate: 0 25% 0;
+        opacity: 0;
+    }
+    100%{
+        translate: 0 0 0;
+        opacity: 1;
+    }
+}
+#skill>section>div{
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-#assignment>section>div>div{
+#skill>section>div>div>button{
+    background-color:rgb(45, 45, 45);
+    color: white;
+    border: 1px solid rgb(191, 191, 115);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+#skill .technologies{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-weight: 500;
+
+}
+#skill .technologies>div{
+    margin: 10px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.technologies:hover>div{
+    opacity: 1;
+    visibility: visible;
+}
+#education>section{
     display: flex;
     justify-content: center;
+    align-items: center;    
+    padding:150px;
+    padding-bottom: 0;
+    margin-bottom: 200px;
+    
 }
-#assignment>section>div>div>a>button{
-    background: #262B2F;
-    color: #ffffff;
+#education>section>div{
+    width: 30%;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
-    border: 2px solid white;
-    width: fit-content;
-    height: 25px;
-    padding: 3px;
-    margin-right: 5px;
-    
-}
-#assignment>section>div>h2{
-    margin:5px;
-}
-#assignment>section>div>p{
-    font-size: 0.8rem;
-    margin: 5px;
-    /* text-align: center; */
-    
-}
-/* cases1  */
-#assignment #cases1>header{
-    display: flex;
-    justify-content: end;
-    border-radius: 5px;
-}
-#assignment #cases1>header>button{
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-}
-#assignment #cases1>header>button>img{
-    width: 2rem;
-}
-#assignment #cases1{
-    width: 60%;
+    z-index: 2;
+    background-color:rgb(45, 45, 45);
     height: fit-content;
-    border: 2px solid black;
-    background-color: #111416;
-    padding: 10px;
+    padding: 20px;
+    background-size: cover;
+    
+
+}
+
+#education>section>div>i{
+    color: rgb(191, 191, 115);
+}
+#education>section>div:nth-child(1){
+    font-size: 0.9rem;
+    width: 20%;
+    height: fit-content;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+#education>section>div:nth-child(3){
+    width: 20%;
+    height: fit-content;
+    position: relative;
+    right: 20px;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+#education>h1{
     text-align: center;
+
+}
+#education>h1>span{
+    color: rgb(191, 191, 115);
+}
+#education>section>div>h3{
+    color: rgb(191, 191, 115);
+}
+#education>section>div:hover{
+    scale: 1.5;
+    z-index: 3;
+}
+#project{
+    display: flex;
+    padding: 15%;
+    padding-top: 0;
+}
+#project>#desc{
+    width: 40%;
+}
+#project>#wrapper{
+    width: 60%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:10px;
+}
+#project>#wrapper::-webkit-scrollbar{
+    width: 0;
+}
+#project>#wrapper>div{
+    border-radius: 20px;
+    min-width: 40%;
+    height: 250px;
+    margin-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    position: relative;
+
+}
+#project span{
+    color: rgb(191, 191, 115);
+}
+#project h1{
+    margin-top: 4%;
+    font-size: 2rem;
+
+}
+#project>#desc>p>span{
+    font-weight: bold;
+}
+#project>#wrapper>div>h5{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+#project>#desc>button{
+    background-color: #15181a;
+    border:1px solid rgb(191, 191, 115);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1%;
+}
+#project>#desc>button:hover{
+    background-color: rgb(191, 191, 115);
+    color: black;
+    border: 1px #15181a solid;
+    cursor: pointer;
+}
+#project>#wrapper>div>img{
+    width: 100%;
+    opacity: 0.4;
+}
+#project>#wrapper>div>button{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
     top: 0;
+    bottom: 0;
     margin: auto;
-}
-#assignment .cases>div{
-    margin-top:10% ;
-}
-#assignment .cases>div>a{
-    text-decoration: none;
-    color: white;
-}
-#assignment .cases>div>a>h1{
-    margin: 10px;
-    border-radius: 10px;
+    width: 40%;
     height: fit-content;
-    padding: 5px;
-    background-color: #454545;
-    box-shadow: rgba(229, 229, 229, 0.12) 0px 2px 4px 0px, rgba(81, 80, 80, 0.32) 0px 2px 16px 0px;
-    
-}
-
-/* project section  */
-#project>h1{
-    text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    color: black;
-    font-weight: 900;
-    margin: 8%;
-}
-#project>section{
+    padding: 2%;
+    background-color: #15181a;
+    border: 1px solid rgb(191, 191, 115);
     color: white;
-    padding: 2em;
+    border-radius: 10px;
+}
+#project>#wrapper>div:hover{
+    scale: 1.1;
+}
+#project>#wrapper>div>img:hover{
+    opacity: 1;
+}
+#assignment>h1{
+    text-align: center;
+}
+#assignment span{
+    color: rgb(191, 191, 115);
+}
+#assignment #wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+    padding-top: 5em;
+}
+#assignment #wrapper>.list{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    place-items: center center;
-    z-index: 2;
+    grid-template-columns: repeat(10,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 70%;
+}
+#assignment #wrapper>.list::-webkit-scrollbar{
+    width: 0;
+}
+#assignment #wrapper>.list>.box{
+    min-width:300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    margin: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+#assignment #wrapper>.list>.box>div:first-child{
+    width: 100%;
+    height: 100%;
 }
 
-#project>section>div{
-    width: 80%;
-    height: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    background: #262B2F;
-    border-radius: 10px;
-    
+#assignment #wrapper>.list>.box>div:first-child>div:first-child{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 12px ;
 }
-#project>section>div>h4{
+#assignment #wrapper>.list>.box>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 12px;
+    margin-top: 1%;
     text-align: center;
+    font-weight: 300;
+
+
 }
-#project>section>div>div{
+#assignment #wrapper > .list > .box:hover{
+    background-color: rgb(193, 193, 193);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#assignment #wrapper > .list > .box:hover > div:first-child {
+    display: none;
+}
+#assignment #wrapper > .list > .box:hover > div:last-child{
+    margin: 0;
+    -webkit-transition: 2s;
+}
+
+#assignment #wrapper>.list>.box>div:last-child::before{
+    background-color: rgb(87, 87, 87);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+    border-radius: 12px;
+}
+#assignment #wrapper>.list>.box>div:last-child>div{
+    z-index: 1;
+
+}
+
+#assignment #wrapper>.list>.box>div:last-child>div>button{
+    background: #15181a;
+    border: 1px solid rgb(191, 191, 115);
+    padding: 2%;
+    color : white;
+    margin: 1px;
+    border-radius: 10px;
+    width: 100px;
+}
+#assignment #wrapper>.list>.box>div:last-child>div>button{
+    background: #15181a;
+    border: 1px solid rgb(191, 191, 115);
+    padding: 2%;
+    color : white;
+    margin: 1px;
+    border-radius: 10px;
+    width: 100px;
+}
+#assignment #wrapper>.list>.box #img1{
+    background-image: url("assets/imgs/a84cb52512994103b4c506741682a274.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img2{
+    background-image: url("assets/imgs/10d3ccda625625ac425a5fc7c8216f39.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assignment #wrapper>button{
+    padding: 8px;
+    border: none;
+    background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px;
+
 }
-#project>section>div>div>button{
-    background-color: #262B2F;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
+#assignment #wrapper>button>img{
+    width: 25px;
+    height: 25px;
 }
-#project>section>div>img{
-    width: 100%;
-    height: 50%;
+#assignment #wrapper>button:nth-child(1){
+    transform: rotate(180deg);
 }
-#project #wall{
-    border: 1px solid;
-    height: 300px;
-    background: linear-gradient(#262B2F,white);
-    margin-top: -100px;
-    z-index: 1;
-    padding-left: 4em;
-    border-radius: 10%;
+#assignment #wrapper>.list>.box{
+    
 }
-#project>#wall>button{
-    padding: 4%;
-    border: 2px solid white;
-    background-color: #262B2F;
-    color: white;
-    border-radius: 10px;
-    place-self: center start;
+
+.hireMe>h1:first-child{
+    color: rgb(191, 191, 115);
+    font-size: 1.3rem;
+
+}
+.hireMe>h1:nth-child(2){
+    font-size: 2.4rem;
+   
    
 }
-.hireMe{
-    margin-top: 10%;
-    background-color: #1b1e20;
-    color: white;
-}
-.hireMe>h1 {
+.hireMe>h1{
     text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    font-weight: 900;
 }
-
-.hireMe>section {
-    margin: 50px;
+.hireMe>section{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: start;
+  
+    
 }
-
-.hireMe>section>div:nth-child(1) {
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    height: fit-content;
-    background-color: #262B2F;
-    grid-column: 1;
+.hireMe>section>#contact>div{
     display: flex;
-    justify-content: center;
-    width: 100%;
-
+    align-items: center;
+    padding: 1em;
+    margin:10px;
+    border-radius: 12px ;
+    background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-
-.hireMe>section>div:nth-child(1)>form {
-    height: fit-content;
-    padding: 15px;
-    width: 100%;
+.hireMe>section>#contact>div>div{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 1.2rem;
 }
-
-.hireMe>section>div:nth-child(1)>form input {
+.hireMe>section>#contact>div>div:nth-child(2)>a{
+    color: white;
+    
+}
+.hireMe>section>#contact>div>div img{
+    width: 30px;
+    height: 30px;
+}
+.hireMe>section>#email>form>div>input{
     width: 100%;
     height: 30px;
-    background-color: #454545;
     border-radius: 10px;
-    border-style: none;
-    padding: 5px;
-}
-
-.hireMe>section>div:nth-child(1)>form textarea {
-    width: 100%;
-    height: 200px;
-    background-color: #454545;
-    border-radius: 10px;
-    border-style: none;
-    padding: 5px;
-}
-
-.hireMe>section>div:nth-child(1)>form button {
-    width: 100px;
-    height: 25px;
-    border-radius: 6px;
-    background-color: #454545;
+    border: 1px solid rgb(191, 191, 115);
+    background-color:rgb(45, 45, 45);
     color: white;
-    border: none;
 }
-
-.hireMe>section>div:nth-child(2){
+.hireMe>section>#email>form>div>textarea{
     width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(191, 191, 115);
+    background-color:rgb(45, 45, 45);
+    color: white;
 }
-.hireMe>section>div:nth-child(2)>section>img {
-    width: 70%;
-}
-
-.hireMe>section {
-    display: flex;
-    justify-content: center;
-}
-
-.hireMe>section>div {
+.hireMe>section>#email>form{
+    width: 90%;
+    padding: 5%;
+    background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 10px;
-}
-
-.hireMe>section>div:nth-child(2)>section>div>div:nth-child(1) {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3px;
-    background-color: #262B2F;
-}
-
-.hireMe>section>div:nth-child(2)>section>div>div>#whatsapp {
-    color: green;
-
-}
-
-.hireMe>section>div:nth-child(2)>section>div>div>#email {
-    color: rgb(181, 57, 57);
-
-}
-
-.hireMe>section>div:nth-child(2)>section>div>div>#location {
-    color: red;
-
-}
-
-.hireMe>section>div:nth-child(2)>section>div {
-    display: flex;
-}
-#gallery>h1{
-    text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    font-weight: 900;
-    margin-top: 10%;
-}
-#gallery{
-   
-}
-#gallery>section{
-    margin-top: 10%;
-    place-self: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 500px;
-    
-}
-#gallery>section>div{
-    width: 20%;
-    height: 300px;
-    border: 2px solid ;
-    margin: 20px;
-
-}
-#gallery>section>div:nth-child(1){
-    height: 100%;
-    background-image: url("assets/img/432277000_925106579085730_5372217276935642645_n.jpg");
-    background-position: center;
-    background-size: cover;
-}
-#gallery>section>div:nth-child(2){
-    height: 70%;
-    background-image:url("assets/img/DSC09596.jpg") ;
-    background-position: center;
-    background-size: cover;
-
-}
-#gallery>section>div:nth-child(3){
-    height: 70%;
-    background-image:url("assets/img/366140438_811128910483498_8570698027645271135_n.jpg") ;
-    background-position: center;
-    background-size: cover;
-}
-#gallery>section>div:nth-child(4){
-    height: 100%;
-    background-image:url("assets/img/366304750_811126777150378_4070179225495589162_n.jpg") ;
-    background-position: center;
-    background-size: cover;
-}
-#gallery>div{
-    position: relative;
-    top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#gallery>div>p{
-    width: 70%;
-    font-size: 1em;
-}
-#education>#topic {
-
-}
-
-#education>#topic>h1 {
-    text-align: center;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-size: 3rem;
-    font-weight: 900;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-#education>#main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-
-}
-
-#education>#main>#eduDetails {
-    padding: 5px;
-    width: 300px;
-    height: fit-content;
-    margin: 5px;
-    color: white;
-    background-color: #262B2F;
     border-radius: 10px;
-    box-shadow: -10px 10px 10px rgb(98, 98, 98);
+}
+.hireMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hireMe>section{
+    padding: 10%;
+    padding-top: 5%;
+}
+.hireMe>section>#email>form button{
+    padding: 2%;
+    background-color: rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: white;
+    border: 1px solid rgb(191, 191, 115);
+    border-radius: 10px;
 
 }
-
-#education>#main>#eduDetails>div>h3 {
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-top: 2%;
-    color: rgb(197, 197, 197);
-}
-
-#education>#main>#eduDetails>div>p {
-    font-size: 1rem;
-    width: 270px;
-    align-content: center;
-}
-
-#education>#main>img {
-    width: 20%;
-    height: 550px;
-    margin: 5px;
-
-}
-/* 1024 size */
 @media all and (max-width:1024px) {
+    html{
+        font-size: 90%;
+    }
+    hero>main{
+     
+        height: 400px;
+        
+    }
+    #aboutMe>section>img{
+        width: 30%;
+    }
+    #skill>section{
+        grid-gap: 20px;
+    }
+    #skill>section>div{
+        height: 90%;
+    }
+    #education>section>div{
+        font-size: 0.8rem;
+    }
+    #education>section>div:first-child{
+        width: 30%;
+    }
+    #education>section>div:last-child{
+        width: 30%;
+    }
+    #project>#wrapper>div{
+        height: 100%;
+    }
+    #project>#wrapper>div>button{
+        font-size: 0.7rem;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 20%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>input{
+        height: 30px;
+        
+    }
+    .hireMe>section>div:nth-child(1)>form>div>button{
+        padding: 0.8%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>textarea{
+        height: 100px;
+    }
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 200px;
+    }
+}
+@media all and (max-width:769px) {
+    html{
+        font-size: 80%;
+    }
+    hero>main>img{
+        width: 25%;
+        
+    }
+    #aboutMe>section>img{
+        width: 38%;
+    }
+    #aboutMe>section{
+        padding: 10px;
+    }
+    #skill>section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill>section>div{
+        height: 80%;
+    }
+    #skill>section>div>div>button{
+        font-size: 0.8em;
+    }
+    #education>section>div{
+        font-size: 0.7rem;
+    }
+    #education>section>div:first-child{
+        font-size: 0.7rem;
+    }
+    #education>section>div:last-child{
+        font-size: 0.7rem;
+    }
+    #education>section{
+        padding-top: 50px;
+        margin-bottom: 15%;
+    }
+    #project>#wrapper>div{
+       height: 80%;
+       
+    }
+    #project>#desc>h1{
+        font-size: 3rem;
+    }
+    #project>#desc>p{
+        font-size: 0.8rem;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 25%;
+    }
+}
+@media all and (max-width:426px){
     html{
         font-size: 70%;
     }
-    
-    hero>section:first-child {
-        padding: 0;
-        place-self: center end;
-
-    }
-
-    hero>section:first-child .content>p:nth-child(1) {
+    header>nav{
         display: none;
     }
-
-    hero>section:nth-child(2) {
-        place-self: center start;
-    }
-
-    hero>section:nth-child(2)>img {
-        width: 450px;
-
-    }
-
-    hero>div>ul>li>a>img {
-        border-radius: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: 3px;
-        margin-top: 20px;
-        margin-bottom: -20px;
-        padding: 5px;
-        width: 3em;
-    }
-    hero{
-        margin-top: 5%;
-    }
-    hero>div{
-        margin-top:0px ;
-    }
-    #aboutMe>section{
-        margin-top: 5%;
-        padding: 5%;
-    }
-    
-    #aboutMe>section>div>img{
-        width: 40rem;
-    }
-    #aboutMe>h1{
-        font-size: 4em;
-    }
-    #aboutMe>section>div:nth-child(2){
-        /* scale: 0.6; */
-        place-self: start start;
-        width: 100%;
-      
-    }
-    #assignment>section>div>div>a>button{
-        font-size: 0.8rem;
-        
-    }
-    #project>section>div>div>button{
-        font-size: 0.8rem;
-        padding:5px;
-    }
-    #project>#wall>button{
-        font-size: 0.8rem;
-       
-    }
-    #gallery>section>div{
-        width: 100%;
-        height: 200px;
-        border: 2px solid ;
-        margin: 20px;
-    
-    }
-    #education>#main>img {
-        height: 250px;
-        width: 30%;
-    
-    }
-
-
-
-}
-/* tablet size */
-@media all and (max-width:768px) {
-    html{
-        font-size: 50%;
-        text-align: center;
-    }
-    hero>section:first-child {
-        /* scale: 0.6; */
-        padding: 0;
-        
-
-    }
-
-    hero>section:first-child .content>p:nth-child(1) {
-        display: none;
-    }
-
-    hero>section:nth-child(2) {
-        place-self: center start;
-    }
-
-    hero>section:nth-child(2)>img {
-        width: 360px;
-
-    }
-
-    hero>div>ul>li>a>img {
-        border-radius: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: 3px;
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding: 5px;
-        width: 2em;
-    }
-    #gallery{
-        font-size: 1.5em;
-    }
-    #gallery>section{
-        width: 80%;
-
-    
-    }
-    #gallery>div{
-        top: 50px;
-        
-    }
-
-}
-/* phone large size */
-@media all and (max-width:426px) {
-    html{
-        font-size: 55%;
-    }
-    header>nav {
-        display: none;
-    }
-
-    hero {
+    hero>main{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-
-
-    }
+        align-items: center;
+        text-align: center;
     
-
-    hero>section:nth-child(2)>img {
-        place-self: center center;
-        width: 350px;
-
     }
-
-    hero>section:nth-child(2) {
-        grid-row: 1;
-        place-self: center center;
-
+    hero>main>section:first-child{
+        padding: 10px;
     }
-
-    hero>section:nth-child(1) {
+    hero>main>section:first-child>p{
+        width: 100%;
+    }
+    hero>section>img{
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-top: -9%;
+       
         
     }
-
-    hero>section:first-child .content {
-        padding: 0;
-        margin: 0;
-        box-shadow: none;
-        width: 100%;
-        text-align: center;
-
+    hero>main>img{
+        width: 35%;
     }
-
-    hero>div>ul>li>a>img {
-        border-radius: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: 3px;
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding: 5px;
-        width:2em;
+    #aboutMe{
+        margin-top: 100px;
+    }
+    #aboutMe>section>img{
+        width: 60%;
     }
     #aboutMe>section{
-        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #aboutMe>section>div{
+        padding: 10%;
+    }
+    #aboutMe>section>div>h1{
+        text-align: center;
+    }
+    #skill>section{
+        padding: 10%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #skill>section>div{
+        width: 85%;
+        margin: 10px;
+    }
+    #skill{
+        margin-top: 100px;
+    }
+    #skill>section>div>div>button{
+        font-size: 0.8em;
+    }
+    #education>section{
+        flex-direction: column;
+    }
+    #education>section>div{
+        margin-top: 4%;
+        width: 150%;
+    }
+    #education>section>div:first-child{
+        left: 0;
+        width: 150%;
+        
+    }
+    #education>section>div:last-child{
+        right: 0;
+        width: 150%;
+    }
+    #education{
+        margin-top: 100%;
+    }
+    #project{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #aboutMe>section>div:nth-child(1){
-       place-self: center center;
+    #project>#desc{
+        width: 90%;
+        font-size: 1.5rem;
     }
-    #aboutMe>section:nth-child(2)>p{
-        width: 100%;
-    }
-    #skill>section{
-        grid-template-columns: repeat(2,1fr);
-    }
-    #skill>section>div{
-       font-size: 0.8rem;
-    }
-    #assignment>section{
-        width: 100%;
-       
-    }
-    #assignment>section{
-        grid-template-columns: repeat(2,1fr);
-    }
-    #project>section{
-        
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 2em 0em;
-        margin: 0;
-        
-    }
-    #project #wall{
-        margin-top: -300px;
-    }
-    #project>#wall>button{
-        margin-top: 300px;
-        background-color: #ffffff;
-        border: 1px solid #262B2F;
-        color: #262B2F;
-       
-    }
-    #hireMe>section{
-        display: flex;
-        flex-direction: column;
-    }
-    #gallery>section{
-        width: 100%;
-        height: 200px;
-        padding:5%;
-
-    
-    }
-    #gallery>section>div{
-        margin: 5px ;
-    }
-    #education>#main{
-        display: flex;
-        flex-direction: column;
-    }
-    #education>#main>#eduDetails{
-        width: 70%;
-       
-    }
-    #education>#main>#eduDetails>div>p{
-        width: 200px;
+    #project>#desc>h1{
         text-align: center;
-       
+        font-size: 2rem;
     }
-    #education>#main>img {
-        width: 70%;
+    #project>#wrapper{
+        width: 100%;
+        padding-left: 0;
+        
+        
     }
-}
-/* phone medium size */
-@media all and (max-width:377px) {
-    html{
-        font-size: 50%;
+    #project>#desc>button{
+        padding: 4px;
     }
-    header>nav {
-        display: none;
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 200px;
     }
-
-    hero>section:nth-child(2)>img {
-        place-self: center center;
-        width: 300px;
-
+    #assignment #wrapper>button{
+        width: 40px;
     }
-
-    hero>section:nth-child(2) {
-        grid-row: 1;
-        place-self: center center;
-
+    #assignment #wrapper>button>img{
+        width: 20px;
+        height: 20px;
     }
-
-    hero>section:nth-child(1) {
-        grid-row: 2;
-        place-items: center center;
+   
+    .hireMe>section{
+        grid-template-columns: 1fr;
     }
-
-    hero>section:first-child .content {
-        padding: 0;
+    .hireMe>section #email{
         margin: 0;
-        box-shadow: none;
-        width: fit-content;
+        width: 92%;
     }
-    hero>div>ul>li>a>img {
-        width: 2.5em;
+    .hireMe>section>#contact>div{
+        padding: 0.8em;
     }
-    #aboutMe>section>div:nth-child(1)>img{
+
+}
+@media all and (max-width:376px){
+    #education>section>div{
+        margin-top: 4%;
+        width: 200%;
+    }
+    #education>section>div:first-child{
+        left: 0;
+        width: 200%;
+        
+    }
+    #education>section>div:last-child{
+        right: 0;
+        width: 200%;
+    }
+    #project>#desc{
         width: 90%;
     }
-    #skill>section{
-        grid-template-columns: repeat(1,1fr);
+    #project>#desc>button{
+        font-size: 0.6rem;
+        padding: 3px;
     }
-    #skill>section>div{
-        place-self: center center;
-        width: 70%;
+    #assignment>#wrapper>section>div{
+        min-width: 65%;
     }
-    #assignment>section{
-        grid-template-columns: repeat(1,1fr);
+    #assignment #wrapper>.list>.box{
+        min-width:125px;
+        height: 180px;
     }
-    #assignment>section>div{
-        width: 60%;
+    #assignment #wrapper>button{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-}
-/* phone small size */
+} 
 @media all and (max-width:321px) {
-    htm{
-        font-size: 30%;
+    html{
+        font-size: 60%;
     }
-    header>nav {
-        display: none;
+    #education>section>div{
+        width: 200px;
+        margin-top: 20%;
     }
-
-
-
-    hero>section:nth-child(2)>img {
-        width: 250px;
-
-    }
-
-
-    hero>div>ul>li>a>img {
-        width: 2em;
-    }
-    #skill>section{
-        grid-template-columns: repeat(1,1fr);
-    }
-    #assignment>section{
-        grid-template-columns: repeat(1,1fr);
-    }
-    #assignment>section>div{
-        width: 60%;
-    }
-    #project>#wall>button{
-        margin-top: 280px;
+    #education>section>div:first-child{
+        left: 0;
+        width: 200px;
         
-       
     }
-    .hireMe>section>div:nth-child(1)>form input {
-        width: 100%;
-        height: 20px;
-        
+    #education>section>div:last-child{
+        right: 0;
+        width: 200px;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 75%;
+    }
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 200px;
+    }
+    #assignment #wrapper>.list{
+        min-width: 100%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>button{
+        padding: 1%;
+        background-color:  rgb(38, 38, 38);
+        border: 1px solid rgb(191, 191, 115);
+        color: white;
+        width: 70px;
+        border-radius: 10px;
     }
     
-    .hireMe>section>div:nth-child(1)>form textarea {
-        width: 100%;
-        height: 200px;
-        background-color: #454545;
-        border-radius: 10px;
-        border-style: none;
-        padding: 5px;
-    }
-    .hireMe>section>div:nth-child(1)>form button{
-        margin: 5px;
-    }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
